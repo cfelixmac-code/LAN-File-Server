@@ -1,0 +1,5 @@
+ul li {
+    word-break: normal;
+    white-space: normal;
+    font-size: 15px;
+}
