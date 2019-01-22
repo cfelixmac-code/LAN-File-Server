@@ -42,7 +42,7 @@ exports.selectDirectory = function (folderCallback) {
     dialog.showOpenDialog(mainWindow, {
         properties: ['openDirectory']
     }, function (files) {
-        if (files.length > 0) {
+        if (files != null && files != undefined && files.length > 0) {
             server.setFolder(files[0]);
             folderCallback.onChoosen(files[0]);
         }
